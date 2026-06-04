@@ -1,0 +1,30 @@
+server:
+  port: 8080
+  mode: debug
+
+database:
+  host: localhost
+  port: 3310
+  user: root
+  password: "root"
+  dbname: cowork
+  charset: utf8mb4
+
+redis:
+  host: localhost
+  port: 6380
+  password: "micro_todolist"
+  db: 0
+
+minio:
+  endpoint: localhost:9000
+  access_key: minioadmin
+  secret_key: minioadmin123
+  bucket: cowork
+  use_ssl: false
+
+jwt:
+  access_secret: cowork-access-secret-key-2024
+  refresh_secret: cowork-refresh-secret-key-2024
+  access_ttl: 3600
+  refresh_ttl: 604800
