@@ -4,27 +4,27 @@ server:
 
 database:
   host: localhost
-  port: 3310
-  user: root
-  password: "root"
+  port: 3306
+  user: cowork
+  password: "your_db_password"
   dbname: cowork
   charset: utf8mb4
 
 redis:
   host: localhost
-  port: 6380
-  password: "micro_todolist"
+  port: 6379
+  password: "your_redis_password"
   db: 0
 
 minio:
   endpoint: localhost:9000
   access_key: minioadmin
-  secret_key: minioadmin123
+  secret_key: "your_minio_secret"
   bucket: cowork
   use_ssl: false
 
 jwt:
-  access_secret: cowork-access-secret-key-2024
-  refresh_secret: cowork-refresh-secret-key-2024
+  access_secret: "change-me-to-a-random-string"
+  refresh_secret: "change-me-to-another-random-string"
   access_ttl: 3600
   refresh_ttl: 604800
